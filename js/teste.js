@@ -24,3 +24,12 @@
                 resultsDiv.innerHTML = '<p>Please enter a game title.</p>';
             }
         }
+
+
+function showImg(){
+
+    const img = document.createElement('img');
+    img.src = "../img/cyberpunk.jpg";
+    img.alt = "cyberpunk";
+
+}
