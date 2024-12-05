@@ -12,8 +12,8 @@
 
                 // simula o resultatdo (depois mudar para os dados da API da psn)
                 const simulatedResults = [
-                    { title: gameTitle, price: "R$29.99", condition: "Novo" },
-                    { title: gameTitle, price: "R$19.99", condition: "Usado" }
+                    { title: gameTitle, price: "R$250", condition: "Novo" },
+                    { title: gameTitle, price: "R$130", condition: "Usado" }
                 ];
 
                 // mostra os resultados
