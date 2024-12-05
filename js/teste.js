@@ -94,7 +94,7 @@
 // Function to load JSON data
 async function loadJSON()  {
   try {
-    const response = await fetch('https://andreyhp.github.io/web-teste/js/teste.js'); // Adjust the path as necessary
+    const response = await fetch('https://andreyhp.github.io/web-teste/data/games.json');//esse caminho só funciona se o site estiver no github, se não estiver, o caminho tem que ser ('../data/games.json')
     if (!response.ok) {
       throw new Error('Network response was not ok ' + response.statusText);
     }
