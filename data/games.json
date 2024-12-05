@@ -3,14 +3,14 @@
 
  { "cyberpunk":{
 	"price": "250",
-	"img":  "../img/cyberpunk.jpg"
+	"img":  "https://andreyhp.github.io/web-teste/img/cyberpunk.jpg"
  }
 
 },
 {
 	"gta": {
 	"price": "150",
-	"img":	"../img/gta.jpeg"
+	"img":	"https://andreyhp.github.io/web-teste/img/gta.jpeg"
 }
 }
 
