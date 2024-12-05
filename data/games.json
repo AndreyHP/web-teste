@@ -1,0 +1,21 @@
+{
+"items":[
+
+ { "cyberpunk":{
+	"price": "250",
+	"img":  "../img/cyberpunk.jpg"
+ }
+
+},
+{
+	"gta": {
+	"price": "150",
+	"img":	"../img/gta.jpeg"
+}
+}
+
+
+]
+
+
+}
