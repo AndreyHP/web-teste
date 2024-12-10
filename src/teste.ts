@@ -13,6 +13,31 @@ interface Data {
 var data: Data = { items: [] };
 //var gameTitle: string;
 
+
+function createButton(){
+	var div = document.getElementById("div") as HTMLElement;
+    var div = document.getElementById("div2") as HTMLElement;
+    //Cria o botão
+	var btnSearch = document.createElement("button");
+    var btnSobre = document.createElement("button");
+
+	btnSearch.textContent = "Search";
+    btnSobre.textContent = "Sobre";
+
+	div?.appendChild(btnSearch);
+    div?.appendChild(btnSobre);
+
+	// Add an event listener to the button
+	btnSearch.addEventListener('click', () => {
+		searchGame();
+	});
+
+    btnSobre.addEventListener('click', () => {
+		searchGame();
+	});
+
+};
+
 function findItemPrice(itemName: string): number | null {
     // checa se o objeto é uma array
     const items = data.items;
@@ -101,3 +126,9 @@ async function loadJSON(): Promise<void> {
         console.error('There has been a problem with your fetch operation:', error);
     }
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    createButton();
+
+});

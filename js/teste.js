@@ -10,6 +10,25 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 var data = { items: [] };
 //var gameTitle: string;
+function createButton() {
+    var div = document.getElementById("div");
+    var div = document.getElementById("div2");
+    //Cria o botão
+    var btnSearch = document.createElement("button");
+    var btnSobre = document.createElement("button");
+    btnSearch.textContent = "Search";
+    btnSobre.textContent = "Sobre";
+    div === null || div === void 0 ? void 0 : div.appendChild(btnSearch);
+    div === null || div === void 0 ? void 0 : div.appendChild(btnSobre);
+    // Add an event listener to the button
+    btnSearch.addEventListener('click', () => {
+        searchGame();
+    });
+    btnSobre.addEventListener('click', () => {
+        searchGame();
+    });
+}
+;
 function findItemPrice(itemName) {
     // checa se o objeto é uma array
     const items = data.items;
@@ -90,3 +109,6 @@ function loadJSON() {
         }
     });
 }
+document.addEventListener("DOMContentLoaded", () => {
+    createButton();
+});
